@@ -1,9 +1,7 @@
-document.getElementById("form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    var values = [];
-    var inputs = document.getElementsByTagName("input");
-    for (var i = 0; i < inputs.length; i++) {
-        values.push(inputs[i].value);
-    }
-    console.log(values);
-});
+function addTeams(){
+    var search = document.getElementById("teams").value;
+    var div = document.getElementById("box").innerHTML += "<div class='btn2'>"+ search + "</div>" ;
+    document.getElementById("teams").value = "";
+    document.body.appendChild(div);
+
+}

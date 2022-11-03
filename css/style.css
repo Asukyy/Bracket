@@ -89,3 +89,16 @@ form{
     font-weight: 700;
     margin:10px 325px 0 0;
 }
+
+.btn2{
+    width: 5vh;
+    height: 5vh;
+    font-size: 14px;
+    border-color:#fff;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    background-color: #323e42;
+    color:#fff;
+    font-weight: 700;
+    margin:10px 0 0 10px;
+}

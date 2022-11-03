@@ -30,9 +30,11 @@
                     <li class="textinput">Les équipes seront tirés au sort aléatoirement</li>
                     <li class="textinput">Toutes les équipes que vous marquerez seront affichés dans une box en dessous</li>
                 </ul>
+            <div class="ajout">
                 <input class="barinput" type="text" name="teams" id="teams" placeholder="Equipe1, Equipe2, Equipe3">
-                <!-- crée une box qui va afficher les noms dequipes -->
-                <div class="box">
+                <button class="btn2" onclick="addTeams()" >+</button>
+            </div>
+                <div class="box" id="box">
                 </div>
 
                 <label class="textinput" for="date">Date</label>
