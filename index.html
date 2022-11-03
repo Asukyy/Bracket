@@ -10,13 +10,36 @@
 </head>
 
 <body>
-
+    <header>
+        <img src="img/brackz2.png" alt="logo">
+    </header>   
 
 
         <form action="" id="form">
-            <input name="nom" type="text" placeholder="Nom du tournoi">
-            <textarea name="nome" placeholder="Nom des equipes"></textarea>
-            <input type="submit" value="envoyer">
+            <div class="form-control">
+                <label class="textinput" for="name" >Nom du tournoi</label>
+                <input class="barinput" type="text" name="name" id="name" placeholder="OXM...">
+
+                <label class="textinput" for="type">Type de tournoi</label>
+                <select class="barinput" name="type" id="type">
+                    <option value="single">Single Elimination</option>
+                    <option value="double">Double Elimination</option>
+                </select>
+                <label class="textinput" for="teams">Equipes</label>
+                <ul>
+                    <li class="textinput">Les équipes seront tirés au sort aléatoirement</li>
+                    <li class="textinput">Toutes les équipes que vous marquerez seront affichés dans une box en dessous</li>
+                </ul>
+                <input class="barinput" type="text" name="teams" id="teams" placeholder="Equipe1, Equipe2, Equipe3">
+                <!-- crée une box qui va afficher les noms dequipes -->
+                <div class="box">
+                </div>
+
+                <label class="textinput" for="date">Date</label>
+                <input class="barinput" type="date" name="date" id="date">
+                
+            </div>
+            <button class="btn" type="submit">Générer le bracket</button>  
         </form>
 
 
